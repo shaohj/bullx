@@ -1,0 +1,26 @@
+server:
+  port: 18100
+  servlet:
+    context-path: /@artifactId@
+
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    config:
+      fail-fast: true
+      name: ${spring.application.name}
+      profile: ${spring.profiles.active}
+      discovery:
+        enabled: true
+        service-id: bullx-config
+  profiles:
+    active: local
+
+# 注册中心
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://bullx:bullx@${EUREKA-HOST:bullx-eureka}:${EUREKA-PORT:18080}/bullx-eureka/eureka/
