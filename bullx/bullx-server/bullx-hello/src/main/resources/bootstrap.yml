@@ -1,17 +1,16 @@
 server:
-  port: 18090
+  port: 18188
 
 spring:
   application:
     name: @artifactId@
-  profiles:
-    active: native
-  # 配置中心，加载本地开发环境
+  security:
+    user:
+      name: bullx
+      password: bullx
   cloud:
     config:
-      server:
-        native:
-          search-locations: classpath:/config/
+      enabled: false
 
 # 注册中心
 eureka:
@@ -20,9 +19,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://bullx:bullx@${EUREKA-HOST:bullx-eureka}:${EUREKA-PORT:18080}/eureka/
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'

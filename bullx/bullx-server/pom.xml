@@ -18,6 +18,7 @@
         <module>bullx-gateway</module>
         <module>bullx-eureka</module>
         <module>bullx-config</module>
+        <module>bullx-hello</module>
     </modules>
 
 </project>

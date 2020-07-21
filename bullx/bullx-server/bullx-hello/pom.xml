@@ -9,14 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bullx-config</artifactId>
+    <artifactId>bullx-hello</artifactId>
 
     <dependencies>
-        <!--配置中心-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
-        </dependency>
         <!--web 模块-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -28,14 +23,4 @@
             <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>

@@ -1,7 +1,5 @@
 server:
   port: 18100
-  servlet:
-    context-path: /@artifactId@
 
 spring:
   application:
@@ -14,6 +12,19 @@ spring:
       discovery:
         enabled: true
         service-id: bullx-config
+    gateway:
+      #        discovery:
+      #          locator:
+      #            enabled: true # 开启通过服务中心的自动根据 serviceId 创建路由的功能
+      routes:
+        - id: ribbon-route
+          uri: lb://BULLX-HELLO
+          order: 0
+          predicates:
+            - Path=/myhello/**
+          filters:
+            - StripPrefix=1 #去掉前缀，具体实现参考StripPrefixGatewayFilterFactory
+            - AddResponseHeader=X-Response-Default-Foo, Default-Bar
   profiles:
     active: local
 
@@ -23,4 +34,4 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://bullx:bullx@${EUREKA-HOST:bullx-eureka}:${EUREKA-PORT:18080}/bullx-eureka/eureka/
+      defaultZone: http://bullx:bullx@${EUREKA-HOST:bullx-eureka}:${EUREKA-PORT:18080}/eureka/
