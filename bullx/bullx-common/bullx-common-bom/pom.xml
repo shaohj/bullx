@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-cloud-dependencies-parent</artifactId>
+        <groupId>org.springframework.cloud</groupId>
+        <version>2.1.3.RELEASE</version>
+        <relativePath/>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>bullx-common-bom</artifactId>
+
+    <packaging>pom</packaging>
+    <version>${bullx.version}</version>
+    <description>bullx 公共版本控制</description>
+
+    <properties>
+        <bullx.version>0.0.1</bullx.version>
+        <mybatis-plus.version>3.1.0</mybatis-plus.version>
+        <mysql.connector.version>8.0.13</mysql.connector.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- psys 工具包-->
+            <dependency>
+                <groupId>com.bullx</groupId>
+                <artifactId>bullx-common-core</artifactId>
+                <version>${bullx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.bullx</groupId>
+                <artifactId>bullx-common-gateway</artifactId>
+                <version>${bullx.version}</version>
+            </dependency>
+
+            <!--mybatis plus extension,包含了mybatis plus core-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!--mybatis-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!--mysql 驱动-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.version}</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
+
+</project>

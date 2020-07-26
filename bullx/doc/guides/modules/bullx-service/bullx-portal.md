@@ -1,2 +1,4 @@
 # 1 bullx-portal
-门户
+组件主要功能如下
+- bullx-portal 门户
+  - 门户.系统首页

@@ -86,6 +86,15 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- 导入bullx的依赖 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>bullx-common-bom</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <!--web 模块-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
