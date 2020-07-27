@@ -26,12 +26,13 @@ java微服务后端系统开发学习，希望开发技能牛起来，希望金�
 
 ## 2.1.1 修改hosts文件
 ```
+127.0.0.1 bullx-redis
+127.0.0.1 bullx-mysql
 127.0.0.1 bullx-eureka
 127.0.0.1 bullx-config
 127.0.0.1 bullx-gateway
 127.0.0.1 bullx-auth
 127.0.0.1 bullx-portal
-
 ```
 ## 2.2.2 部署sql
 
