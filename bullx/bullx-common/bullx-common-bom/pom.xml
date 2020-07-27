@@ -19,12 +19,12 @@
     <properties>
         <bullx.version>0.0.1</bullx.version>
         <mybatis-plus.version>3.1.0</mybatis-plus.version>
-        <mysql.connector.version>8.0.13</mysql.connector.version>
+        <mysql.connector.version>8.0.20</mysql.connector.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!-- psys 工具包-->
+            <!-- bullx 工具包-->
             <dependency>
                 <groupId>com.bullx</groupId>
                 <artifactId>bullx-common-core</artifactId>

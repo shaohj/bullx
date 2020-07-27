@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * 名  称：HelloController
  * 描  述：hello测试用
  * 完成日期：2020/7/21 23:45
- * @author：Administrator
+ * @author：felix.shao
  */
 @RestController
 @RequestMapping("hello")

@@ -7,7 +7,6 @@
   - bullx-server  微服务层.描述格式为：`[启动顺序数值]`，数值越小越优先  
     - [注册中心](modules\bullx-service\bullx-eureka.md)  [1]  
     - [配置中心](modules\bullx-service\bullx-config.md)  [2]  
-    - [网关](modules\bullx-service\bullx-gateway.md)  [3]  
+    - [门户](modules\bullx-service\bullx-portal.md)  [3] 启动时会初始化动态路由到redis中，因此需比网关早启动  
     - [认证中心](modules\bullx-service\bullx-auth.md)  [3]  
-    - [门户](modules\bullx-service\bullx-portal.md)  [3]  
- 
+    - [网关](modules\bullx-service\bullx-gateway.md)  [4] 

@@ -23,6 +23,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
         </dependency>
+        <!--动态路由组件-->
+        <dependency>
+            <groupId>com.bullx</groupId>
+            <artifactId>bullx-common-gateway</artifactId>
+        </dependency>
         <!--配置中心客户端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

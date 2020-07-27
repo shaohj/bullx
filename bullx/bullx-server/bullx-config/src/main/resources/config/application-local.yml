@@ -1,4 +1,10 @@
-# 不校验验证码终端
+# redis 相关
+spring:
+  redis:
+    password: p123456
+    host: ${REDIS-HOST:bullx-redis}
+
+# 暴露监控端点
 management:
   endpoints:
     web:

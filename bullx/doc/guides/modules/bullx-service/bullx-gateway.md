@@ -65,3 +65,7 @@ redis存储动态路由信息
     - [SpringCloud实战十三：Gateway之 Spring Cloud Gateway 动态路由](https://blog.csdn.net/zhuyu19911016520/article/details/86557165)
     - [spring cloud 2.x版本 Gateway动态路由教程](https://juejin.im/post/5dbee3dde51d456e652839ea)
   - [聊聊spring cloud gateway的PrefixPath及StripPrefix功能](https://my.oschina.net/go4it/blog/1829211)
+  
+# 4 拓展
+- 拓展问题
+  - 动态路由为什么redis的优先比PropertiesRouteDefinitionLocator加载?

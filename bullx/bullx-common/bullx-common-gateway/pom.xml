@@ -11,5 +11,19 @@
 
     <artifactId>bullx-common-gateway</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.bullx</groupId>
+            <artifactId>bullx-common-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-gateway-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

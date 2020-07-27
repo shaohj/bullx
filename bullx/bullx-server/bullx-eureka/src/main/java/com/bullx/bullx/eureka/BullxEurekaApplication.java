@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * 名  称：BullxEurekaApplication
  * 描  述：注册中心应用服务
  * 完成日期：2020/7/19 14:04
- * @author：Administrator
+ * @author：felix.shao
  */
 @EnableEurekaServer
 @SpringBootApplication

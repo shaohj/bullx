@@ -9,7 +9,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  * 名  称：BullxConfigApplication
  * 描  述：配置中心应用服务
  * 完成日期：2020/7/19 23:30
- * @author：Administrator
+ * @author：felix.shao
  */
 @EnableConfigServer
 @SpringCloudApplication
