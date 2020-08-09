@@ -68,9 +68,11 @@
 
     <modules>
         <module>bullx-common</module>
-        <module>bullx-persist</module>
-        <module>bullx-service</module>
-        <module>bullx-server</module>
+        <module>bullx-eureka</module>
+        <module>bullx-config</module>
+        <module>bullx-auth</module>
+        <module>bullx-gateway</module>
+        <module>bullx-upms</module>
     </modules>
 
     <dependencyManagement>
